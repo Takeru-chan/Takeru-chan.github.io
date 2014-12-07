@@ -1,10 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
-@font-face {
-	font-family: 'Noto Sans';
-	src: url("../fonts/NotoSansCJKjp-Regular.otf") format('opentype');
-}
-.noto {
-  font-family: 'Noto Sans';
+.typesq {
+  font-family: "UD新丸ゴ M"
 }
 
 html {
