@@ -211,11 +211,7 @@ h1 {
   font-size: 28px;
 }
 
-h2 {
-  color: #393939;
-}
-
-h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   color: #494949;
 }
 
@@ -226,6 +222,15 @@ blockquote {
   background: #ccc;
   background: rgba(0, 0, 0, 0.06);
   color: #222;
+}
+
+.clearfix {
+	clear:both;
+}
+.float {
+	float:left;
+	margin-right:20px;
+	margin-bottom:10px;
 }
 
 img {
@@ -239,7 +244,11 @@ code, pre {
   overflow-x: auto;
 }
 
-pre {
+#accent h2 {
+  color: #f8f8f2;
+}
+
+#accent, pre {
   padding: 20px;
   background: #3A3C42;
   color: #f8f8f2;
