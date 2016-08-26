@@ -2,6 +2,38 @@
 .typesq {
   font-family: "UD新丸ゴ M";
 }
+#link {
+	display:block;
+	text-align:center;
+}
+button {
+	width:6em;
+	margin:1em auto;
+}
+
+#github {
+	color:#333333;
+}
+
+#google {
+	color:#dd4b39;
+}
+
+#qiita {
+	color:#51bb39;
+}
+
+#instagram {
+	color:#405de6;
+}
+
+#twitter {
+	color:#1da1f2;
+}
+
+#tumblr {
+	color:#35465c;
+}
 
 .noflow {
   overflow:auto;
@@ -304,18 +336,6 @@ hr {
   background: #aaa;
   height: 1px;
   margin: 0 0 20px;
-}
-
-#qr {
-	float:right;
-	font-size:80%;
-	font-weight:bold;
-	text-align:center;
-}
-
-#qr a:link {
-	color:#fff;
-	text-decoration:underline;
 }
 
 footer {
