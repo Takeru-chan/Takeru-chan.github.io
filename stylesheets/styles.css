@@ -2,18 +2,17 @@ html {
   background:#6C7989 linear-gradient(#6c7989, #434b55) fixed;
 }
 body {
-  padding: 50px 0;
   margin: 0;
+  padding: 0;
   font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #555;
   font-weight: 300;
   background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAUdEVYdENyZWF0aW9uIFRpbWUAMy82LzEygrTcTAAAAFRJREFUSIljfPDggZRf5RIGGNjUHsNATz6jXmSL1Kb2GLiAX+USBnrymRgGGDCORgFmoNAXjEbBaBSMRsFoFIxGwWgUjEbBaBSMRsFoFIxGwWgUAABYNujumib3wAAAAABJRU5ErkJggg==') fixed;
 }
 .wrapper {
-  width: 640px;
+  width: 320px;
   margin: 0 auto;
   background: #dedede;
-  border-radius: 8px;
   box-shadow: rbga(0,0,0,0.2) 0 0 0 1px, rgba(0,0,0,0.45) 0 3px 10px;
 }
 header, section, footer {
@@ -21,8 +20,6 @@ header, section, footer {
 }
 a {
   color: #069;
-}
-a:hover {
   text-decoration: none;
 }
 p {
@@ -30,10 +27,7 @@ p {
   padding: 0;
 }
 header {
-  border-radius: 8px 8px 0 0;
-  background: #c6eafa;
   background: linear-gradient(#ddfbfc, #c6eafa);
-  position: relative;
   padding: 15px 20px;
   border-bottom: 1px solid #b2d2e1;
 }
@@ -52,7 +46,6 @@ header p {
   font-size: 13px;
 }
 header p.view {
-  display: none;
   font-weight: 700;
   text-shadow: rgba(255,255,255,0.9) 0 1px 0;
 }
@@ -62,65 +55,73 @@ header p.view a {
 header p.view small {
   font-weight: 400;
 }
-header ul {
-  margin: 0;
-  list-style: none;
-  position: absolute;
-  z-index: 1;
-  right: 20px;
-  top: 20px;
-  height: 38px;
-  padding: 1px 0;
-  background: #5198df;
-  background: linear-gradient(#77b9fb, #3782cd);
-  border-radius: 5px;
-  box-shadow: inset rgba(255,255,255,0.45) 0 1px 0, inset rgba(0,0,0,0.2) 0 -1px 0;
-  width: auto;
+section {
+  padding: 15px 20px;
+  font-size: 15px;
+  border-top: 1px solid #fff;
+  background: linear-gradient(#fafafa, #dedede 700px);
 }
-header ul:before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  left: -5px;
-  top: -4px;
-  right: -5px;
-  bottom: -6px;
-  background: rgba(0,0,0,0.1);
-  border-radius: 8px;
-  box-shadow: rgba(0,0,0,0.2) 0 -1px 0, inset rgba(255,255,255,0.7) 0 -1px 0;
-}
-header ul li {
-  width: 79px;
+#icon {
+  width: 150px;
   float: left;
-  border-right: 1px solid #3a7cbe;
-  height: 38px;
 }
-header ul li.single {
-  border: none;
+#link {
+  width: 120px;
+  float: right;
+  text-align: center;
+  font-size: 15px;
 }
-header ul a {
-  line-height: 1;
-  font-size: 11px;
-  color: #fff;
-  color: rgba(255,255,255,0.8);
+#link p {
+  margin: 0 0 5px 0;
+  padding: 0 15px;
+  line-height: 1.4em;
   display: block;
-  text-align:center;
-  font-weight: 400;
-  padding-top: 6px;
-  height: 40px;
-  text-shadow: rgba(0,0,0,0.4) 0 -1px 0;
+  background: linear-gradient(#fdfdfd, #cbcbcb);
+  box-shadow: inset rgba(255, 255, 255, 0.45) 0 1px 0, inset rgba(0, 0, 0, 0.2) 0 -1px 0;
+  border-radius: 5px;
 }
-header ul a strong {
-  font-size: 14px;
-  display: block;
-  color: #fff;
+#link a {
+  text-shadow: rgba(255,255,255,0.9) 0 1px 0;
+}
+.github {
+  color:#333333;
+}
+
+.google {
+  color:#dd4b39;
+}
+
+.qiita {
+  color:#51bb39;
+}
+
+.instagram {
+  color:#405de6;
+}
+
+.twitter {
+  color:#1da1f2;
+}
+
+.tumblr {
+  color:#35465c;
+}
+#copyright {
+  text-align: right;
+  margin: 0 1em;
+}
+#profile {
+  border-bottom: 1px solid #999;
+  margin-bottom: 0.5em;
+}
+#profile p + p + p {
+  text-align: center;
 }
 footer {
-  width: 640px;
+  width: 320px;
   margin: 0 auto;
   padding: 20px 0 0;
   color: #ccc;
-  overflow: hidden;
 }
 footer a {
   color: #fff;
@@ -128,40 +129,8 @@ footer a {
 }
 footer p {
   float: left;
+  margin-bottom: 0;
 }
 footer p + p {
   float: right;
-}
-section {
-  padding: 15px 20px;
-  font-size: 15px;
-  border-top: 1px solid #fff;
-  background: linear-gradient(#fafafa, #dedede 700px);
-  border-radius: 0 0 8px 8px;
-  position: relative;
-}
-#accent {
-  padding: 20px;
-  background: #3a3c42;
-  color: #f8f8f2;
-  margin: 0 -20px 20px;
-}
-h2 {
-  font-size: 22px;
-}
-#link {
-  display: block;
-  text-align: center;
-  font-size: 11px;
-}
-button {
-  width: 8em;
-  margin: 1em auto;
-  line-height: 2em;
-  font-weight: bold;
-  text-shadow: rgba(255,255,255,0.9) 0 1px 0;
-}
-#copyright {
-  text-align: right;
-  margin: 0 1em;
 }

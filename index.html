@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- necolas normalize.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
     <link rel="stylesheet" href="./stylesheets/styles.css">
   </head>
   <body>
@@ -18,50 +18,34 @@
         <p class="view"><!-- mobile ON -->
           <a href="https://github.com/Takeru-chan">View the Project on GitHub <small>Takeru-chan</small></a>
         </p>
-        <ul><!-- desktop ON -->
-          <li class="single">
-            <a href="https://github.com/Takeru-chan/Takeru-chan.github.io">View On <strong>GitHub</strong></a>
-          </li>
-        </ul>
       </header>
       <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <a href="http://www.iroiro-making.com">
-                <img src="./images/my_icon.jpg" width="150" height="150" alt="my icon">
-              </a>
-            </div>
-            <div class="col-md-8">
-              <p>2017年は連休が少ないけど<a href="http://www.travel-note.org">今年もいろんなところへ行ってみたいな。</a>₍₍ ◝( ˙ ꒳ ˙ )◟ ⁾⁾<br>
-              中断していた<a href="http://www.beginning-swift.com">Swift</a>と<a href="http://qiita.com/Takeru">PowerShell</a>、今年は少し前進したいぞ。</p>
-              <p>だいたい毎晩呑んでる。(╹◡╹)</p>
-              <p>生息地：練馬</p>
-            </div>
-          </div><!-- end of row -->
-        </div><!-- end of container -->
-        <div id="accent">
-          <h2>Contact</h2>
-          <div id="link">
-            <button type="button"><a href="">Github</a></button>
-            <button type="button"><a href="">Qiita</a></button>
-            <button type="button"><a href="">Instagram</a></button>
-            <button type="button"><a href="">Twitter</a></button>
-            <button type="button"><a href="">Tumblr</a></button>
-            <button type="button"><a href="">Google+</a></button>
-          </div><!-- end of link -->
-        </div><!-- end of accent -->
+        <div id="icon">
+          <a href="http://www.iroiro-making.com">
+            <img src="./images/my_icon.jpg" width="150" height="150" alt="my icon">
+          </a>
+        </div>
+        <div id="link">
+          <p><a href="" class="github">Github</a></p>
+          <p><a href="" class="qiita">Qiita</a></p>
+          <p><a href="" class="instagram">Instagram</a></p>
+          <p><a href="" class="twitter">Twitter</a></p>
+          <p><a href="" class="tumblr">Tumblr</a></p>
+          <p><a href="" class="google">Google+</a></p>
+        </div>
+        <div id="profile">
+          <p>2017年は連休が少ないけど<a href="http://www.travel-note.org">今年もいろんなところへ行ってみたいな。</a>₍₍ ◝( ˙ ꒳ ˙ )◟ ⁾⁾<br>
+          中断していた<a href="http://www.beginning-swift.com">Swift</a>と<a href="http://qiita.com/Takeru">PowerShell</a>、今年は少し前進したいぞ。</p>
+          <p>だいたい毎晩呑んでる。(╹◡╹)</p>
+          <p>生息地：練馬</p>
+        </div>
         <p id="copyright">&copy;2014&nbsp;Takeru-chan.</p>
       </section>
 
-      <!-- jQuery first, then Tether, then Bootstrap JS. -->
-      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     </div><!-- end of .wrapper -->
     <footer>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-      <p>Powered by <a href="">Bootstrap v4.0.0-alpha.6</a></p>
+      <p>Rewrites <a href="https://github.com/orderedlist">orderedlist/minimal</a> theme</p>
+      <p>with <a href="https://github.com/necolas/normalize.css/">necolas/normalize.css</a></p>
     </footer>
   </body>
 </html>
