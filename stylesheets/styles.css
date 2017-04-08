@@ -26,6 +26,9 @@ p {
   margin: 0 0 20px;
   padding: 0;
 }
+h1, h2 {
+  line-height: 1.1;
+}
 header {
   background: linear-gradient(#ddfbfc, #c6eafa);
   padding: 15px 20px;
@@ -165,17 +168,28 @@ footer p + p {
     color: #f8f8f2;
   }
   #contact {
-    padding: 20px;
+    padding: 5px 20px;
     background: #3A3C42;
     color: #f8f8f2;
-    margin: 0 -20px 20px;
+    margin: -5px -20px 20px;
   }
-  button {
-    width:8em;
-    margin:1em auto;
-    line-height:2em;
-    font-weight:bold;
-    text-shadow: rgba(255, 255, 255, 0.9) 0 1px 0;
+  #nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  #nav p {
+    display: table-cell;
+    width: 70px;
+    line-height: 2em;
+    vertical-align: middle;
+    background: linear-gradient(#fdfdfd, #cbcbcb);
+    box-shadow: inset rgba(255, 255, 255, 0.45) 0 1px 0, inset rgba(0, 0, 0, 0.2) 0 -1px 0;
+    border-radius: 5px;
+  }
+  #nav a {
+    text-shadow: rgba(255,255,255,0.9) 0 1px 0;
+    font-weight: 400;
   }
   footer {
     width: 100%;
@@ -206,17 +220,28 @@ footer p + p {
     color: #f8f8f2;
   }
   #contact {
-    padding: 20px;
+    padding: 5px 20px;
     background: #3A3C42;
     color: #f8f8f2;
-    margin: 0 -20px 20px;
+    margin: -5px -20px 20px;
   }
-  button {
-    width:8em;
-    margin:1em auto;
-    line-height:2em;
-    font-weight:bold;
-    text-shadow: rgba(255, 255, 255, 0.9) 0 1px 0;
+  #nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  #nav p {
+    display: table-cell;
+    width: 84px;
+    line-height: 2em;
+    vertical-align: middle;
+    background: linear-gradient(#fdfdfd, #cbcbcb);
+    box-shadow: inset rgba(255, 255, 255, 0.45) 0 1px 0, inset rgba(0, 0, 0, 0.2) 0 -1px 0;
+    border-radius: 5px;
+  }
+  #nav a {
+    text-shadow: rgba(255,255,255,0.9) 0 1px 0;
+    font-weight: 400;
   }
   footer {
     width: 640px;
