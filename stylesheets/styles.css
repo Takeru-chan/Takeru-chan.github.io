@@ -175,7 +175,7 @@ footer p + p {
   }
   #nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
   }
   #nav p {
@@ -185,7 +185,8 @@ footer p + p {
     vertical-align: middle;
     background: linear-gradient(#fdfdfd, #cbcbcb);
     box-shadow: inset rgba(255, 255, 255, 0.45) 0 1px 0, inset rgba(0, 0, 0, 0.2) 0 -1px 0;
-    border-radius: 5px;
+    border-radius: 10px;
+    border: 5px solid #3a3c42;
   }
   #nav a {
     text-shadow: rgba(255,255,255,0.9) 0 1px 0;
@@ -227,7 +228,7 @@ footer p + p {
   }
   #nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
   }
   #nav p {
@@ -237,7 +238,8 @@ footer p + p {
     vertical-align: middle;
     background: linear-gradient(#fdfdfd, #cbcbcb);
     box-shadow: inset rgba(255, 255, 255, 0.45) 0 1px 0, inset rgba(0, 0, 0, 0.2) 0 -1px 0;
-    border-radius: 5px;
+    border-radius: 10px;
+    border: 5px solid #3a3c42;
   }
   #nav a {
     text-shadow: rgba(255,255,255,0.9) 0 1px 0;
