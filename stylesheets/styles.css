@@ -131,9 +131,98 @@ footer a {
 }
 footer p {
   float: left;
+  margin-left: 20px;
   margin-bottom: 0;
 }
 footer p + p {
   float: right;
+  margin-right: 20px;
   margin-bottom: 1.5em;
+}
+@media only screen and (max-device-width: 640px) and (orientation: portrait) {
+  #contact {
+    display: none;
+  }
+}
+/* for 5" iPhone */
+@media only screen and (max-device-width: 640px) and (orientation: landscape) {
+  .wrapper {
+    width: 100%;
+  }
+  #link {
+    display: none;
+  }
+  #profile {
+    margin-left: 170px;
+    margin-bottom: 0.5em;
+    border-bottom: none;
+  }
+  #profile p + p + p {
+    text-align: right;
+    margin-right: 1em;
+  }
+  #contact h2 {
+    color: #f8f8f2;
+  }
+  #contact {
+    padding: 20px;
+    background: #3A3C42;
+    color: #f8f8f2;
+    margin: 0 -20px 20px;
+  }
+  button {
+    width:8em;
+    margin:1em auto;
+    line-height:2em;
+    font-weight:bold;
+    text-shadow: rgba(255, 255, 255, 0.9) 0 1px 0;
+  }
+  footer {
+    width: 100%;
+  }
+  footer p + p{
+    float: left;
+    margin-left: 0.3em;
+  }
+}
+/* for tablet or desktop */
+@media only screen and (min-device-width: 641px) {
+  .wrapper {
+    width: 640px;
+  }
+  #link {
+    display: none;
+  }
+  #profile {
+    margin-left: 170px;
+    margin-bottom: 0.5em;
+    border-bottom: none;
+  }
+  #profile p + p + p {
+    text-align: right;
+    margin-right: 1em;
+  }
+  #contact h2 {
+    color: #f8f8f2;
+  }
+  #contact {
+    padding: 20px;
+    background: #3A3C42;
+    color: #f8f8f2;
+    margin: 0 -20px 20px;
+  }
+  button {
+    width:8em;
+    margin:1em auto;
+    line-height:2em;
+    font-weight:bold;
+    text-shadow: rgba(255, 255, 255, 0.9) 0 1px 0;
+  }
+  footer {
+    width: 640px;
+  }
+  footer p + p{
+    float: left;
+    margin-left: 0.3em;
+  }
 }
