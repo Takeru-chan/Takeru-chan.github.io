@@ -83,7 +83,6 @@ section {
   margin: 0 0 5px 0;
   padding: 0 15px;
   line-height: 1.4em;
-  display: block;
   background: linear-gradient(#fdfdfd, #cbcbcb);
   box-shadow: inset rgba(255, 255, 255, 0.45) 0 1px 0, inset rgba(0, 0, 0, 0.2) 0 -1px 0;
   border-radius: 5px;
@@ -91,6 +90,7 @@ section {
 #link a {
   text-shadow: rgba(255,255,255,0.9) 0 1px 0;
   font-weight: 400;
+  display: block;
 }
 .github {
   color:#333333;
@@ -147,13 +147,14 @@ footer p + p {
   margin-right: 20px;
   margin-bottom: 1.5em;
 }
-@media only screen and (max-device-width: 640px) and (orientation: portrait) {
+/* only mobile phone on portrait mode */
+@media (max-device-width: 640px) and (orientation: portrait) {
   #contact, .single {
     display: none;
   }
 }
-/* for 5" iPhone */
-@media only screen and (max-device-width: 640px) and (orientation: landscape) {
+/* except mobile phone on portrait mode */
+@media (min-device-width: 641px), (max-device-width: 640px) and (orientation: landscape) {
   .view {
     display: none;
   }
@@ -223,6 +224,7 @@ footer p + p {
   #nav a {
     text-shadow: rgba(255,255,255,0.9) 0 1px 0;
     font-weight: 400;
+    display: block;
   }
   footer {
     width: 100%;
@@ -233,36 +235,9 @@ footer p + p {
   }
 }
 /* for tablet or desktop */
-@media only screen and (min-device-width: 641px) {
+@media (min-device-width: 641px) {
   body {
     padding: 50px 0;
-  }
-  .view {
-    display: none;
-  }
-  .single {
-    width: 79px;
-    float: right;
-    margin-top: -3.3em;
-    height: 40px;
-    background: linear-gradient(#77b9fb, #3782cd);
-    border-radius: 5px;
-    box-shadow: inset rgba(255, 255, 255, 0.45) 0 1px 0, inset rgba(0, 0, 0, 0.2) 0 -1px 0;
-    text-align: center;
-  }
-  .single a {
-    line-height: 1;
-    font-size: 11px;
-    color: rgba(255, 255, 255, 0.8);
-    font-weight: 400;
-    text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0;
-    display: block;
-    padding-top: 8px;
-  }
-  .single a strong {
-    font-size: 14px;
-    color: #fff;
-    display: block;
   }
   .wrapper {
     width: 640px;
@@ -275,52 +250,10 @@ footer p + p {
   section {
     border-radius: 0 0 8px 8px;
   }
-  #link {
-    display: none;
-  }
-  #profile {
-    margin-left: 170px;
-    margin-bottom: 0.5em;
-    border-bottom: none;
-  }
-  #profile p + p + p {
-    text-align: right;
-    margin-right: 1em;
-  }
-  #contact h2 {
-    color: #f8f8f2;
-  }
-  #contact {
-    padding: 5px 20px;
-    background: #3A3C42;
-    color: #f8f8f2;
-    margin: -5px -20px 20px;
-  }
-  #nav {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
   #nav p {
-    display: table-cell;
     width: 84px;
-    line-height: 2em;
-    vertical-align: middle;
-    background: linear-gradient(#fdfdfd, #cbcbcb);
-    box-shadow: inset rgba(255, 255, 255, 0.45) 0 1px 0, inset rgba(0, 0, 0, 0.2) 0 -1px 0;
-    border-radius: 10px;
-    border: 5px solid #3a3c42;
-  }
-  #nav a {
-    text-shadow: rgba(255,255,255,0.9) 0 1px 0;
-    font-weight: 400;
-    display: block;
   }
   footer {
     width: 640px;
-  }
-  footer p + p{
-    float: left;
-    margin-left: 0.3em;
   }
 }
